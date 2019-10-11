@@ -8,15 +8,14 @@ api = Api(app)
 
 @app.route('/')
 def index():
-#     maybe showing the README file
-    return "index"
+#     readme
+    pass
 
 
 class Sum(Resource):
-    def get(self):
-        args = request.args
-        num1 = args["num1"]
-        num2 = args["num2"]
+    def post(self):
+        num1 = request.form.get("num1")
+        num2 = request.form.get("num2")
         try:
             result = sum_strings(num1, num2)
             return jsonify(dict(data=[num1, num2], result=result))
@@ -25,10 +24,9 @@ class Sum(Resource):
 
 
 class Mul(Resource):
-    def get(self):
-        args = request.args
-        num1 = args["num1"]
-        num2 = args["num2"]
+    def post(self):
+        num1 = request.form.get("num1")
+        num2 = request.form.get("num2")
         try:
             result = mul_strings(num1, num2)
             return jsonify(dict(data=[num1, num2], result=result))
