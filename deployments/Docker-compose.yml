@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: arithmetic-api
+    build:
+      context: ../
+      dockerfile: deployments/Dockerfile
+    ports:
+      - "5000:5000"
