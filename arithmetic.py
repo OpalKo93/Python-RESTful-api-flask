@@ -23,13 +23,30 @@ def sum_strings(arr1, arr2):
 
 
 def mul_strings(arr1, arr2):
-    if int(arr1) == 0 or int(arr2) == 0:
-        return [0]
+    if arr1 == "" and arr2 == "":
+        return []
+
     try:
-        num1 = [int(i) for i in arr1]
-        num2 = [int(i) for i in arr2]
+        if int(arr1) == 0 or int(arr2) == 0:
+            return [0]
+    except:
+        pass
+
+    num1 = []
+    num2 = []
+
+    try:
+        if arr1 != "":
+            num1 = [int(i) for i in arr1]
+        if arr2 != "":
+            num2 = [int(i) for i in arr2]
     except TypeError:
         raise TypeError("Cannot convert your string to array of int")
+
+    if arr1 == "":
+        return num2
+    elif arr2 == "":
+        return num1
 
     k = 0
     results = [[]]
@@ -54,6 +71,5 @@ def mul_strings(arr1, arr2):
     for item in results:
         final_result = sum_strings(final_result, item)
     return final_result
-
 
 
