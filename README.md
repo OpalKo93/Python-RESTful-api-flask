@@ -144,6 +144,10 @@ The table below shows the various commands that can be done in Web Service, as w
 -  app should be available at http://0.0.0.0:5000
 
 
+## Requirements
+To build this project you will need Docker and Docker Compose
+
+
 ## Challenges
 
 -  Working with Flask framework
