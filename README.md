@@ -119,17 +119,6 @@ def test_sum_with_big_nums(self):
 	self.assertEqual(sum_strings(num1, num2), expected_result)
 ```
 
-So how did we actually check that this is the real **expected_result** that needs to be accepted if we are currently building the system and want to test its correctness?
-
-***Answer:***
-
-Because this system has already implemented by others, the correctness of the answer can be more easily checked with them, for example we have used various sites such as:
-
-- [Wolfram Alpha](https://www.wolframalpha.com/input/?i=8124125132532423432431433426362143342174+*+999999243279636214334217481)
-- [Big Number Calculator](https://defuse.ca/big-number-calculator.htm)
-
-And the most important part: The correctness of the algorithm and the math is also valid for large numbers nor should there be a reason why this system would not be valid for large numbers either.
-
 
 ### API & Documentation 
 
