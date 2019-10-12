@@ -129,13 +129,6 @@ The table below shows the various commands that can be done in Web Service, as w
 |  `sum` | `num1`: should be in number represented as string.<br /><br />`num2`: should be in number represented as string. |  **In case of no errors:**<br />the output will be JSON with two fields: `data`: the numbers before the calculation.<br />`result`: int array at the form of each digit is a cell in the array.<br /><br />**In case of error:**<br />`error`: the error message | The POST request:<br /> `{num1: 55, num2:30}`<br /><br />  The output:<br /> `{"data":["55","30"],"result":[8,3]}` |
 |  `mul` | `num1`: should be in number represented as string.<br /><br />`num2`: should be in number represented as string. | **In case of no errors:**<br />the output will be JSON with two fields: `data`: the numbers before the calculation.<br />`result`: int array at the form of each digit is a cell in the array.<br /><br />**In case of error:**<br />`error`: the error message | The POST request:<br /> `{num1: 5, num2:3}`<br /><br />  The output:<br /> `{"data":["5","3"],"result":[1,5]}` |
 
-## Challenges
-
--  Working with Flask framework
--  I was reminded through sources of information about the difference between POST and GET
--  Learned about unit testing
--  Learned how to Dockerize python project
-
 
 ## Docker Setup
 
@@ -150,6 +143,13 @@ The table below shows the various commands that can be done in Web Service, as w
 -  run the app with `docker-compose up`
 -  app should be available at http://0.0.0.0:5000
 
+
+## Challenges
+
+-  Working with Flask framework
+-  I was reminded through sources of information about the difference between POST and GET
+-  Learned about unit testing
+-  Learned how to Dockerize python project
 
 
 ## Built With
