@@ -150,9 +150,9 @@ To build this project you will need Docker and Docker Compose
 ## Challenges
 
 -  Working with Flask framework
--  I was reminded through sources of information about the difference between POST and GET
--  Learned about unit testing
--  Learned how to Dockerize python project
+-  Choosing between POST or GET.
+-  Learnning about unit testing
+-  Learnning how to Dockerize python project
 
 
 ## Built With
