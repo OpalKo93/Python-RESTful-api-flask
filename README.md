@@ -40,7 +40,7 @@ In many cases, such as in cryptography, astronomy and in scientific/engineering 
 > 
 > If the service associated with the processing of a form has side effects (for example, modification of a database or subscription to a service), the method should be POST.
 
-Although, according to this source, our request should be in GET, because we have seen that our request can be very big and very essential and we don't want our HTTP Request to be cut in the middle, **we would still prefer to use POST**.
+Although, according to this source, our request should be in GET, because we have seen that our request can be very big and very essential and we don't want our HTTP Request to be cut in the middle, **i would still prefer to use POST**.
 
 ### Sum of two `long numbers`
 
