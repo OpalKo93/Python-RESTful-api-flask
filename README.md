@@ -107,7 +107,6 @@ Some end-cases that the system examines:
 * Check end case that either num1 or num2 or both are nulls.
 * Check that in case the numbers are incorrect the system will return an Exception.
 
-### Break down into end to end tests
 
 Let's take a look on a arbitrary example from the unit testing class:
 
